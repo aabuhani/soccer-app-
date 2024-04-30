@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teams</title>
+</head>
+<body>
+    <h1>Teams</h1>
+    <ul>
+        {% for team in teams %}
+            <li>{{ team }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_team') }}">Add New Team</a>
+</body>
+</html>

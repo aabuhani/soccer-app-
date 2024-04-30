@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Player</title>
+</head>
+<body>
+    <h1>Add Player</h1>
+    <form method="post" action="{{ url_for('add_player') }}">
+        <label>First Name:</label>
+        <input type="text" name="firstname" required><br>
+        <label>Last Name:</label>
+        <input type="text" name="lastname" required><br>
+        <label>Birthdate:</label>
+        <input type="date" name="birthdate" required><br>
+        <label>Rating:</label>
+        <input type="text" name="rating" required><br>
+        <label>Team ID (Optional):</label>
+        <input type="number" name="teamid"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
